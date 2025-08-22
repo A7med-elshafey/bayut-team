@@ -1,0 +1,33 @@
+{
+  "id": "khozmaa-22",
+  "name": "خزامي-22",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "ready",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/pdfs/Fact-Sheet-Khozama-22.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/pdfs/Guarantees-Khozama-22.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/pdfs/Mini-Catalogue-Khuzama-22.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/pdfs/Payment-Plan-Khozama-22.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/pdfs/Sales-Kit-Khozama-22.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/videos/first-floor-khozmaa-22.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/videos/ground-floor-khozmaa-22.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/videos/roof-floor-khozmaa-22.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+      
+      ]
+    }
+  }
+}

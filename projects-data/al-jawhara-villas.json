@@ -1,0 +1,31 @@
+{
+  "id": "al-jawhara-villas",
+  "name": "فلل-الجوهرة",
+  "category": { "key": "villas", "label": "الفلل" },
+  "status": "ready",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/al-jawhara-villas/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/al-jawhara-villas/pdfs/Al-Jawhara-3-Fold.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/al-jawhara-villas/pdfs/Al-Jawhara-Catalogue.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/al-jawhara-villas/pdfs/Layouts-Jawahir-Villas.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/al-jawhara-villas/pdfs/project-guarantees.pdf"
+
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/al-jawhara-villas/videos/type-B-jawhara-villa.mp4"
+
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+      ]
+    }
+  }
+}

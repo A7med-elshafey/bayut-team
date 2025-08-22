@@ -1,0 +1,33 @@
+{
+  "id": "jood-9",
+  "name": "برج جود9",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-9/cover/cover-jood-9.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-9/pdfs/Fact+sheet+jood+9+.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-9/pdfs/Sales+Kit+-+Jood+9.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-9/pdfs/Specifications+(Jood+9).pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-3/videos/real-video-jood-3.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        {
+         "url": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-9/info/Contract-simple.pdf",
+          "label": "نموذج عقد الوحدة"
+
+        }
+      ]
+    }
+  }
+}

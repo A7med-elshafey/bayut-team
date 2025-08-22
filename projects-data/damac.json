@@ -1,0 +1,30 @@
+{
+  "id": "damac",
+  "name": "برج داماك",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "ready",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/cover/cover.jpg",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/pdfs/sales-kit.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/pdfs/fact.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/videos/2bed.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/videos/93m-1bed.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/videos/Studio.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf"
+      ]
+    }
+  }
+}

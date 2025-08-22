@@ -1,0 +1,28 @@
+{
+  "id": "jood-4",
+  "name": "برج جود4",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "ready",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-4/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-4/pdfs/Fact-sheet-jood-4.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-4/pdfs/Payment-Plan-Jood-4.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-4/pdfs/Sales-Kit-Jood-4.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-4/pdfs/Specifications-(Jood+4).pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+      ]
+    }
+  }
+}

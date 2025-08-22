@@ -1,0 +1,139 @@
+[
+  
+  {
+    "id": "damac",
+    "name": "برج داماك",
+    "category": { "key": "towers", "label": "الأبراج" },
+    "status": "ready",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/cover/cover.jpg"
+  },
+  {
+    "id": "jood-3",
+    "name": "برج جود3",
+    "category": { "key": "towers", "label": "الأبراج" },
+    "status": "ready",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-3/cover/cover-jood-3.png"
+  },
+   {
+    "id": "jood-4",
+    "name": "برج جود4",
+    "category": { "key": "towers", "label": "الأبراج" },
+    "status": "ready",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-4/cover/cover.png"
+  },
+   {
+    "id": "jood-9",
+    "name": "برج جود9",
+    "category": { "key": "towers", "label": "الأبراج" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-9/cover/cover-jood-9.png"
+  },
+  {
+    "id": "trump-jeddah",
+    "name": "برج-ترامب-جده",
+    "category": { "key": "towers", "label": "الأبراج" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/cover/cover.png"
+  },
+    {
+    "id": "jood-6",
+    "name": "برج-جود-6",
+    "category": { "key": "towers", "label": "الأبراج" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/cover/cover-jood-6.png"
+  },
+  {
+    "id": "calma-tower",
+    "name": "برج-كالما",
+    "category": { "key": "towers", "label": "الأبراج" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/cover/cover.png"
+  },
+  {
+    "id": "aknan-23",
+    "name": "اكنان-23",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/cover/cover.png"
+  },
+   {
+    "id": "aknan-24",
+    "name": "اكنان-24",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/cover/cover.png"
+  },
+   {
+    "id": "masharq-1",
+    "name": "مشارق",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/cover/cover.png"
+  },
+  {
+    "id": "osus-eye",
+    "name": "عين-اسس",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/cover/cover.png"
+  },
+    {
+    "id": "Sella-3",
+    "name": "صله-3",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/cover/cover.png"
+  },
+      {
+    "id": "aligria-appartments",
+    "name": "اليغريا-شقق",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/cover/cover.jpeg"
+  },
+    {
+    "id": "madain",
+    "name": "مداين",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "ready",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/cover/cover.png"
+  },
+
+  {
+    "id": "aligria-villas",
+    "name": "اليغريا-النرجس",
+    "category": { "key": "villas", "label": "الفلل" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/cover/cover.jpeg"
+  },
+  {
+    "id": "rassen-villas",
+    "name": "رسين-الخزام",
+    "category": { "key": "villas", "label": "الفلل" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/cover/cover.png"
+  },
+  {
+    "id": "al-jawhara-villas",
+    "name": "فلل-الجوهرة",
+    "category": { "key": "villas", "label": "الفلل" },
+    "status": "ready",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/al-jawhara-villas/cover/cover.png"
+  },
+  {
+    "id": "khozmaa-22",
+    "name": "خزامي-22",
+    "category": { "key": "floors", "label": "الادوار" },
+    "status": "ready",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/cover/cover.png"
+  },
+  {
+    "id": "tuwiq",
+    "name": "ادوار-طويق",
+    "category": { "key": "floors", "label": "الادوار" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/cover/cover.png"
+  }
+
+
+]

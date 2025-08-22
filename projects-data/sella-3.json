@@ -1,0 +1,32 @@
+{
+  "id": "Sella-3",
+  "name": "صله-3",
+  "category": { "key": "apartments", "label": "الشقق" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/pdfs/3-Fold-Sella-3.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/pdfs/Fact-sheet-Sella-3-Arabic.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/pdfs/Guarantees-Sella-3.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/pdfs/Sales+Kit+-+Sella+3.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/contract.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/escrow-account.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/off-plan-sales-license.pdf"
+      ]
+    }
+  }
+}

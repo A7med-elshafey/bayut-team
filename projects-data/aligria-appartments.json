@@ -1,0 +1,32 @@
+{
+  "id": "aligria-appartments",
+  "name": "اليغريا-شقق",
+  "category": { "key": "apartments", "label": "الشقق" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/cover/cover.jpeg",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/pdfs/Building-D.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/pdfs/Building-E.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/pdfs/Building-F.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/pdfs/Guarantees-Finishing-Specficiations-Alegria-appartments.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/pdfs/Payment-Plan-Algeria-Apartments.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/pdfs/Sales-Kit-Algeria-(Apartments).pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+          "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/videos/Project-video.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/info/Prototype-unit-sales-contract.pdf"
+      ]
+    }
+  }
+}

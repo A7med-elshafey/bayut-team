@@ -1,0 +1,35 @@
+{
+  "id": "aknan-24",
+  "name": "اكنان-24",
+  "category": { "key": "apartments", "label": "الشقق" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/pdfs/3-Fold-Aknan-24.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/pdfs/Aknan-24-Fact+Sheet.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/pdfs/Booking-Form-Aknan-24.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/pdfs/Guarantees-Document-Aknan-24.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/pdfs/Sales-Kit-Aknan-24.pdf"
+
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/videos/entrance-video-aknan-24.mp4.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/videos/full-project-video-aknan-24.mp4.mp4"
+
+
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf"
+      ]
+    }
+  }
+}

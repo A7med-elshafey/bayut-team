@@ -1,0 +1,35 @@
+{
+  "id": "trump-jeddah",
+  "name": "برج-ترامب-جده",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/pdfs/Arabic-Brochure.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/pdfs/Arabic-Brochure.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/pdfs/Sea-View-Apartment.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/pdfs/Trump-Tower-Payment+Plan.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/pdfs/Trump-Tower-Units+Details.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/videos/trump-tower-jeddah.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        {
+         "url": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/info/Trump-Jeddah-DRAFT-SPA.pdf",
+          "label": "نموذج عقد الوحدة"
+
+        }
+      ]
+    }
+  }
+}

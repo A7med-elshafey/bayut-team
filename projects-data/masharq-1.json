@@ -1,0 +1,44 @@
+{
+  "id": "masharq-1",
+  "name": "مشارق",
+  "category": { "key": "apartments", "label": "الشقق" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/3-Fold-Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Developer-Bank-Account-Details-Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Fact-sheet-Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Guarantees%26Specifications-Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Payment-Plan-Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Project-Profile-Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Sales+Kit-Building-A-+Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Sales-Kit-Building-B-+Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Sales-Kit-+Building-C-+Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Sales-Kit-Building-D-+Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Sales-Kit-Building-E-+Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Sales-Kit-Building-F-Mashreq-1.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/pdfs/Sales-Kit-Mashreq-1-(Updated).pdf"
+
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/videos/real-video-mashrq-1.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/videos/Virtual-tour-2-masharq-1.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/videos/Virtual-tour-masharq-1.mp4"
+
+
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf"
+      ]
+    }
+  }
+}

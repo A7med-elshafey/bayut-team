@@ -1,0 +1,29 @@
+{
+  "id": "calma-tower",
+  "name": "برج-كالما",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/pdfs/Fact-Sheet-Calma-Tower.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/pdfs/Payment-Plan-Calma-Tower.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/pdfs/Sales-Kit-Calma+Tower.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/pdfs/Unit-Reservation-Form-Calma+Tower.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+     
+      ]
+    }
+  }
+}

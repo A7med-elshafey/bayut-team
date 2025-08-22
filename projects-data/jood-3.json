@@ -1,0 +1,29 @@
+{
+  "id": "jood-3",
+  "name": "برج جود3",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "ready",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-3/cover/cover-jood-3.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-3/pdfs/Fact+sheet+jood+3+.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-3/pdfs/Sales+Kit+-+Jood+3.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-3/pdfs/Specifications+(Jood+3).pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-3/videos/real-video-jood-3.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf"
+      ]
+    }
+  }
+}

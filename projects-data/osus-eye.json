@@ -1,0 +1,30 @@
+{
+  "id": "osus-eye",
+  "name": "عين-اسس",
+  "category": { "key": "apartments", "label": "الشقق" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/pdfs/osus-eye-brochure.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/pdfs/Sales-Kit-Eye+Osus.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/videos/Full-project-osous-eye.mp4"
+
+
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/info/prices-list-osous-eye.pdf"
+      ]
+    }
+  }
+}

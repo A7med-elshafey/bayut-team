@@ -1,0 +1,30 @@
+{
+  "id": "tuwiq",
+  "name": "ادوار-طويق",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/pdfs/floors-structure-tuwiq.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/pdfs/Payment-Plan-Tuwaiq-Residential-Floors.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/pdfs/Sales+Kit-Tuwaiq-Residential-Floors.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/pdfs/Sales-Kit-(updated).pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/videos/tuwiq-video.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+     "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/info/contract-tuwiq.pdf"
+      ]
+    }
+  }
+}

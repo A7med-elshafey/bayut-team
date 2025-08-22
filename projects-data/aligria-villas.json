@@ -1,0 +1,34 @@
+{
+  "id": "aligria-villas",
+  "name": "اليغريا-النرجس",
+  "category": { "key": "villas", "label": "الفلل" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/cover/cover.jpeg",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/pdfs/Guarantees-Finishing-Specficiations-Alegria-Villas.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/pdfs/Master-plan-with-Villa-Layouts-MP.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/pdfs/Sales+Kit-Algeria-(Villas).pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/pdfs/Villa-A.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/pdfs/Villa-B.pdf"
+
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/videos/project-video.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/videos/Real-video-aligria-villas.mp4"
+
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf"
+      ]
+    }
+  }
+}

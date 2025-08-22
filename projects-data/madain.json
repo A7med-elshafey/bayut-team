@@ -1,0 +1,30 @@
+{
+  "id": "madain",
+  "name": "مداين",
+  "category": { "key": "apartments", "label": "الشقق" },
+  "status": "ready",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Madain-Guarantees.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Madain-Sales-Kit.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Madain-Village-+3Fold.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Madain-Village-Fact+Sheet.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+
+
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+      ]
+    }
+  }
+}

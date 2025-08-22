@@ -1,0 +1,39 @@
+{
+  "id": "rassen-villas",
+  "name": "vsdk-hgo.hl",
+  "category": { "key": "villas", "label": "الفلل" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/3-Fold-Raseen-Khuzam.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Booking-Form-Raseen-Khuzam.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Booking-Process-Raseen+Khuzam.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/developer-sales-kit-Raseen-Khuzam.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Fact-Sheet-Raseen-Khuzam.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Finishing-Specifications-Raseen+Khuzam.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Guarantees-Specifications-Raseen+Khuzam.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Payment-Plan-Raseen+Khuzam.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Project-details.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Sales-Kit-Raseen+Khuzam.pdf"
+
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/videos/Show-unit-rassen.mp4"
+
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/info/contract-rassen.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/info/rassen-questaions.pdf"
+      ]
+    }
+  }
+}

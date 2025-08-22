@@ -1,0 +1,40 @@
+{
+  "id": "jood-6",
+  "name": "برج جود6",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/cover/cover-jood-6.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/pdfs/Fact-sheet-jood-6.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/pdfs/Jood-6-Payment-Plan.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/pdfs/Jood-6-Sales-Kit-(English).pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/pdfs/Sales-Kit-Jood-6.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/pdfs/Specifications-(Jood+6).pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/videos/night-video-jood-6.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        {
+         "url": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/info/contract-jood-6.pdf",
+          "label": "صك-جود-6"
+
+        },
+        {
+         "url": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/info/owners-notice.pdf",
+          "label": "شعار-الملاك-جود-6"
+
+        }
+      ]
+    }
+  }
+}
