@@ -1,7 +1,10 @@
 {
-  "id": "Sella-3",
+  "id": "sella-3",
   "name": "صله-3",
-  "category": { "key": "apartments", "label": "الشقق" },
+  "category": {
+    "key": "apartments",
+    "label": "الشقق"
+  },
   "status": "under-construction",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/cover/cover.png",
   "sections": {
@@ -16,9 +19,7 @@
     },
     "videos": {
       "title": "الفيديوهات",
-      "items": [
-
-      ]
+      "items": []
     },
     "info": {
       "title": "معلومات إضافية",
@@ -27,6 +28,20 @@
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/escrow-account.pdf",
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/off-plan-sales-license.pdf"
       ]
+    },
+    "location": {
+      "title": "الموقع",
+      "items": [
+        "https://maps.app.goo.gl/S8AKpnzgd1iwBxFa9"
+        
+      ]
+    },
+    "prices": {
+      "title": "الأسعار",
+      "items": [
+        "https://bayut.propforce.com/en/inventory?projectIds=3092"
+      ]
     }
   }
+
 }

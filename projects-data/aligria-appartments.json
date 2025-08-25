@@ -1,7 +1,10 @@
 {
   "id": "aligria-appartments",
   "name": "اليغريا-شقق",
-  "category": { "key": "apartments", "label": "الشقق" },
+  "category": {
+    "key": "apartments",
+    "label": "الشقق"
+  },
   "status": "under-construction",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/cover/cover.jpeg",
   "sections": {
@@ -19,7 +22,7 @@
     "videos": {
       "title": "الفيديوهات",
       "items": [
-          "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/videos/Project-video.mp4"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/videos/Project-video.mp4"
       ]
     },
     "info": {
@@ -27,6 +30,19 @@
       "items": [
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/info/Prototype-unit-sales-contract.pdf"
       ]
-    }
+    },
+    "location": {
+          "title": "الموقع",
+          "items": [
+            "https://maps.app.goo.gl/t5txwdSvDg5CxiEY7"
+            
+          ]
+        },
+        "prices": {
+          "title": "الأسعار",
+          "items": [
+            "https://bayut.propforce.com/en/inventory?projectIds=3145"
+          ]
+        }
   }
 }

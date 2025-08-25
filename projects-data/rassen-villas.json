@@ -1,7 +1,10 @@
 {
   "id": "rassen-villas",
   "name": "vsdk-hgo.hl",
-  "category": { "key": "villas", "label": "الفلل" },
+  "category": {
+    "key": "villas",
+    "label": "الفلل"
+  },
   "status": "under-construction",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/cover/cover.png",
   "sections": {
@@ -18,14 +21,12 @@
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Payment-Plan-Raseen+Khuzam.pdf",
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Project-details.pdf",
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/pdfs/Sales-Kit-Raseen+Khuzam.pdf"
-
       ]
     },
     "videos": {
       "title": "الفيديوهات",
       "items": [
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/videos/Show-unit-rassen.mp4"
-
       ]
     },
     "info": {
@@ -34,6 +35,20 @@
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/info/contract-rassen.pdf",
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/info/rassen-questaions.pdf"
       ]
+    },
+    "location": {
+      "title": "الموقع",
+      "items": [
+        "https://maps.app.goo.gl/Cj92HEujGYrG1HdcA"
+        
+      ]
+    },
+    "prices": {
+      "title": "الأسعار",
+      "items": [
+        "https://bayut.propforce.com/en/inventory?projectIds=3086"
+      ]
     }
   }
+
 }

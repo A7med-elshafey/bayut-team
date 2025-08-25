@@ -1,310 +1,242 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useRef, useState, useCallback } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+import { useParams, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { getProject } from "../services/api";
 
-// نفس الـ worker اللي عندك في public/pdfjs
-pdfjs.GlobalWorkerOptions.workerSrc = "/pdfjs/pdf.worker.min.mjs";
+// label من أي URL
+function labelFromUrl(u) {
+  try {
+    const raw = typeof u === "string" ? u : (u?.url || "");
+    const last = raw.split("/").pop().split("?")[0];
+    const noExt = last.includes(".")
+      ? last.substring(0, last.lastIndexOf("."))
+      : last;
+    return noExt
+      .replace(/[-_]/g, " ")
+      .replace(/(\d+)(bed)/i, "$1 Bed")
+      .replace(/\s+/g, " ")
+      .trim();
+  } catch {
+    return String(u);
+  }
+}
+
+function iconFor(section) {
+  switch (section) {
+    case "videos":
+      return "🎬";
+    case "pdfs":
+      return "📄";
+    case "info":
+      return "ℹ️";
+    case "location":
+      return "📍";
+    case "prices":
+      return "💰";
+    default:
+      return "🔗";
+  }
+}
+
+function toItems(arr) {
+  if (!Array.isArray(arr)) return [];
+  return arr
+    .map((x) =>
+      typeof x === "string"
+        ? { url: x, label: labelFromUrl(x) }
+        : { url: x?.url, label: x?.label || labelFromUrl(x?.url || "") }
+    )
+    .filter((it) => !!it.url);
+}
 
 export default function ProjectSection() {
-  const { id, section } = useParams();
+  const { category, id, section } = useParams();
+  const activeSection = section || "videos";
+
   const [project, setProject] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  // -------- PDF state --------
-  const [selectedPdf, setSelectedPdf] = useState(null);
-  const [numPages, setNumPages] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [scale, setScale] = useState(1);
-  const [fitToWidth, setFitToWidth] = useState(true);
-
-  const pdfContainerRef = useRef(null);
-  const widthRef = useRef(800);
-  const [containerWidth, setContainerWidth] = useState(800);
-
-  // -------- Video state --------
   const [selectedVideo, setSelectedVideo] = useState(null);
-  const videoFrameRef = useRef(null);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   useEffect(() => {
-    (async () => {
-      const proj = await getProject(id);
-      setProject(proj);
-    })();
-  }, [id]);
-
-  // منع سكرول الصفحة أثناء فتح اللايت بوكس
-  useEffect(() => {
-    if (selectedPdf) document.body.classList.add("overflow-hidden");
-    else document.body.classList.remove("overflow-hidden");
-    return () => document.body.classList.remove("overflow-hidden");
-  }, [selectedPdf]);
-
-  // إغلاق بـ ESC
-  const onKey = useCallback((e) => {
-    if (e.key === "Escape") {
-      setSelectedPdf(null);
-      setSelectedVideo(null);
+    async function load() {
+      try {
+        setLoading(true);
+        const p = await getProject(id);
+        setProject(p || null);
+      } catch (e) {
+        setProject(undefined);
+      } finally {
+        setLoading(false);
+      }
     }
-  }, []);
-  useEffect(() => {
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [onKey]);
+    load();
+  }, [category, id]);
 
-  // قياس عرض الكونتينر عشان "fit to width"
-  useEffect(() => {
-    if (!pdfContainerRef.current) return;
-    const ro = new ResizeObserver((entries) => {
-      const w = Math.min(entries[0].contentRect.width, 1200); // سقف عرض
-      widthRef.current = w;
-      setContainerWidth(w);
-    });
-    ro.observe(pdfContainerRef.current);
-    return () => ro.disconnect();
-  }, [selectedPdf]);
-
-  // تتبّع الصفحة الحالية أثناء السكروول
-  useEffect(() => {
-    if (!selectedPdf) return;
-    const nodes = document.querySelectorAll("[data-pdf-page]");
-    const io = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible) {
-          const p = Number(visible.target.getAttribute("data-pdf-page"));
-          setCurrentPage(p);
-        }
-      },
-      { root: pdfContainerRef.current, threshold: [0.25, 0.5, 0.75] }
+  if (loading)
+    return <div className="max-w-6xl mx-auto px-4 pt-24">جارِ التحميل…</div>;
+  if (project === undefined)
+    return (
+      <div className="max-w-6xl mx-auto px-4 pt-24">تعذر تحميل المشروع</div>
     );
-    nodes.forEach((n) => io.observe(n));
-    return () => io.disconnect();
-  }, [selectedPdf, numPages]);
+  if (!project)
+    return <div className="max-w-6xl mx-auto px-4 pt-24">المشروع غير موجود</div>;
 
-  if (!project) return <p className="p-8">جار التحميل...</p>;
-  const sec = project.sections?.[section];
-  if (!sec) return <p className="p-8">لا يوجد بيانات</p>;
-
-  // أدوات الفيديو
-  const openVideoFullScreen = () => {
-    const el = videoFrameRef.current;
-    if (!el) return;
-    if (el.requestFullscreen) el.requestFullscreen();
+  const S = project.sections || {};
+  const sectionData = {
+    title: S[activeSection]?.title || "",
+    items: toItems(S[activeSection]?.items || []),
   };
 
   return (
-    <div className="p-6 md:p-8 mt-24">
-      <h1 className="text-2xl font-bold text-green-700 mb-6 text-right">
-        {project.name} — {sec.title}
-      </h1>
+    <div className="max-w-6xl mx-auto px-4 pt-24">
+      {project.cover && (
+        <img
+          src={project.cover}
+          alt={project.name || project.id}
+          className="w-full max-h-80 object-cover rounded-2xl mb-4"
+        />
+      )}
 
-      {/* -------------------- Videos -------------------- */}
-      {section === "videos" && (
-        <>
-          {/* مشغل علوي يظهر عند اختيار فيديو */}
-          {selectedVideo && (
-            <div className="mb-6 rounded-2xl overflow-hidden shadow bg-white border">
-              <div className="p-3 flex items-center justify-between">
-                <div className="text-green-700 font-bold truncate text-right">
-                  {selectedVideo.label ||
-                    selectedVideo.split?.("/").pop() ||
-                    selectedVideo}
-                </div>
-                <div className="flex gap-2">
-                  <button
-                    onClick={openVideoFullScreen}
-                    className="px-3 py-1 rounded-xl bg-gray-100 hover:bg-gray-200"
-                    title="ملء الشاشة"
-                  >
-                    ⛶
-                  </button>
-                  <button
-                    onClick={() => setSelectedVideo(null)}
-                    className="px-3 py-1 rounded-xl bg-red-100 hover:bg-red-200"
-                    title="إغلاق"
-                  >
-                    ✕
-                  </button>
-                </div>
-              </div>
-              <div ref={videoFrameRef} className="relative bg-black">
+      {/* أزرار التنقل */}
+      <div className="flex flex-wrap gap-2 mb-6">
+        {["videos", "pdfs", "info", "location", "prices"].map((key) => (
+          <Link
+            key={key}
+            to={`/projects/${category}/${project.id}/${key}`}
+            className={`px-3 py-2 rounded-xl border transition text-sm
+              ${
+                activeSection === key
+                  ? "bg-green-600 text-white border-green-600"
+                  : "bg-white text-green-700 border-green-200 hover:bg-green-50"
+              }`}
+          >
+            {iconFor(key)}{" "}
+            {key === "videos"
+              ? "الفيديوهات"
+              : key === "pdfs"
+              ? "ملفات PDF"
+              : key === "info"
+              ? "معلومات إضافية"
+              : key === "location"
+              ? "الموقع"
+              : "قائمة الأسعار"}
+          </Link>
+        ))}
+      </div>
+
+      <h1 className="text-2xl font-bold mb-4">{project.name}</h1>
+
+      {/* VIDEOS */}
+      {activeSection === "videos" && (
+        <div className="mt-2">
+          {isVideoOpen && selectedVideo && (
+            <div
+              className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center"
+              onClick={() => {
+                setIsVideoOpen(false);
+                setSelectedVideo(null);
+              }}
+            >
+              <div
+                className="relative w-full h-full md:w-5/6 md:h-[80vh] lg:w-3/4 lg:h-[80vh]"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <video
+                  src={selectedVideo}
+                  className="w-full h-full object-contain bg-black rounded-xl shadow-2xl"
                   controls
-                  className="w-full h-[56vh] object-contain bg-black"
-                  src={selectedVideo.url || selectedVideo}
                   autoPlay
+                  playsInline
                 />
+                <button
+                  onClick={() => {
+                    setIsVideoOpen(false);
+                    setSelectedVideo(null);
+                  }}
+                  className="absolute top-3 right-3 px-3 py-1 rounded-lg bg-red-600 text-white text-sm hover:bg-red-700"
+                >
+                  إغلاق ✖
+                </button>
               </div>
             </div>
           )}
 
-          {/* شبكة كروت صغيرة */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {sec.items.map((item, idx) => {
-              const src = item.url || item;
-              const label = item.label || src.split("/").pop();
-              return (
+            {sectionData.items.length ? (
+              sectionData.items.map((item, idx) => (
                 <button
                   key={idx}
                   onClick={() => {
-                    setSelectedVideo(item);
+                    setSelectedVideo(item.url);
+                    setIsVideoOpen(true);
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
-                  className="group text-left bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden border"
-                  title={label}
+                  className="group text-right bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden border"
+                  title={item.label}
                 >
                   <div className="relative h-36 bg-black">
                     <video
                       className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition"
-                      src={src}
+                      src={item.url}
                       muted
                       preload="metadata"
+                      playsInline
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     <div className="absolute bottom-2 right-2 text-xs text-white font-semibold line-clamp-1">
-                      {label}
+                      {item.label}
                     </div>
                   </div>
                 </button>
-              );
-            })}
+              ))
+            ) : (
+              <div className="py-3 rounded-xl bg-gray-100 text-gray-500 text-center">
+                لا يوجد فيديوهات
+              </div>
+            )}
           </div>
-        </>
-      )}
-
-      {/* -------------------- PDFs + Info -------------------- */}
-      {(section === "pdfs" || section === "info") && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Sidebar ثابتة */}
-          <div className="space-y-3 md:sticky md:top-28 h-fit self-start">
-            {sec.items.map((item, idx) => {
-              const href = item.url || item;
-              const label = item.label || href.split("/").pop();
-              return (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    setSelectedPdf(href);
-                    setScale(1);
-                    setFitToWidth(true);
-                  }}
-                  className={`block w-full text-right px-4 py-2 rounded-lg border transition ${
-                    selectedPdf === href
-                      ? "bg-green-600 text-white"
-                      : "bg-white text-green-700 hover:bg-green-100"
-                  }`}
-                >
-                  {label}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* مساحة خالية */}
-          <div className="md:col-span-2" />
         </div>
       )}
 
-      {/* ------------- PDF Lightbox (Full Screen) ------------- */}
-      {selectedPdf && (
-        <div
-          className="fixed inset-0 z-50 flex flex-col bg-black/70 backdrop-blur-sm animate-[fadeIn_.2s_ease]"
-          role="dialog"
-          aria-modal="true"
-        >
-          {/* شريط أدوات */}
-          <div className="m-4 rounded-2xl bg-white/10 border border-white/20 text-white px-4 py-2 flex items-center justify-between">
-            <div className="flex gap-2">
-              <button
-                onClick={() => setFitToWidth(true)}
-                className={`px-3 py-1 rounded-xl ${
-                  fitToWidth ? "bg-white/30" : "bg-white/10 hover:bg-white/20"
-                }`}
-                title="ملاءمة العرض"
-              >
-                ⇱ Fit
-              </button>
-              <button
-                onClick={() => {
-                  setFitToWidth(false);
-                  setScale((s) => Math.min(s + 0.15, 3));
-                }}
-                className="px-3 py-1 rounded-xl bg-white/10 hover:bg-white/20"
-                title="تكبير"
-              >
-                ＋
-              </button>
-              <button
-                onClick={() => {
-                  setFitToWidth(false);
-                  setScale((s) => Math.max(s - 0.15, 0.5));
-                }}
-                className="px-3 py-1 rounded-xl bg-white/10 hover:bg-white/20"
-                title="تصغير"
-              >
-                －
-              </button>
-            </div>
-
-            <div className="text-sm opacity-90">
-              صفحة <b>{currentPage}</b> من <b>{numPages || "?"}</b>
-            </div>
-
-            <button
-              onClick={() => setSelectedPdf(null)}
-              className="px-3 py-1 rounded-xl bg-red-500/80 hover:bg-red-500 text-white"
-              title="إغلاق (Esc)"
-            >
-              ✕
-            </button>
-          </div>
-
-          {/* مساحة العرض */}
-          <div ref={pdfContainerRef} className="flex-1 overflow-auto px-4 pb-6">
-            <div
-              className="mx-auto transition-all duration-200"
-              style={{
-                width: fitToWidth
-                  ? Math.round(containerWidth)
-                  : Math.round(containerWidth * scale),
-              }}
-            >
-              <Document
-                file={selectedPdf}
-                onLoadSuccess={({ numPages }) => setNumPages(numPages)}
-                loading={
-                  <p className="text-white text-center mt-10">
-                    جار تحميل الملف…
-                  </p>
-                }
-                error={
-                  <p className="text-red-300 text-center mt-10">
-                    تعذر تحميل الملف
-                  </p>
-                }
-              >
-                {Array.from({ length: numPages || 0 }, (_, i) => (
-                  <div
-                    key={i}
-                    data-pdf-page={i + 1}
-                    className="mb-4 rounded-xl overflow-hidden shadow-lg bg-white"
-                  >
-                    <Page
-                      pageNumber={i + 1}
-                      width={
-                        fitToWidth
-                          ? Math.round(containerWidth)
-                          : Math.round(containerWidth * scale)
-                      }
-                      renderTextLayer={false}
-                      renderAnnotationLayer={false}
-                    />
-                  </div>
-                ))}
-              </Document>
-            </div>
+      {/* باقي السيكشنات */}
+      {activeSection !== "videos" && (
+        <div className="mt-2">
+          <div className="grid gap-3 md:grid-cols-2">
+            {sectionData.items.length ? (
+              sectionData.items.map((item, i) => (
+                <a
+                  key={i}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-800"
+                >
+                  <span className="text-base">
+                    {activeSection === "location"
+                      ? "موقع المشروع"
+                      : activeSection === "prices"
+                      ? "عرض الأسعار"
+                      : item.label}
+                  </span>
+                  <span className="text-xl" aria-hidden>
+                    {iconFor(activeSection)}
+                  </span>
+                </a>
+              ))
+            ) : (
+              <div className="py-3 rounded-xl bg-gray-100 text-gray-500 text-center">
+                {activeSection === "pdfs"
+                  ? "لا توجد ملفات"
+                  : activeSection === "info"
+                  ? "لا يوجد محتوى"
+                  : activeSection === "location"
+                  ? "لا يوجد روابط موقع"
+                  : activeSection === "prices"
+                  ? "لا توجد أسعار"
+                  : "لا يوجد محتوى"}
+              </div>
+            )}
           </div>
         </div>
       )}

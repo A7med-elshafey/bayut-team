@@ -78,7 +78,7 @@
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/cover/cover.png"
   },
     {
-    "id": "Sella-3",
+    "id": "sella-3",
     "name": "صله-3",
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "under-construction",

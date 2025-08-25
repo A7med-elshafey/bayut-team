@@ -1,7 +1,10 @@
 {
   "id": "khozmaa-22",
   "name": "خزامي-22",
-  "category": { "key": "towers", "label": "الأبراج" },
+  "category": {
+    "key": "towers",
+    "label": "الأبراج"
+  },
   "status": "ready",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/cover/cover.png",
   "sections": {
@@ -25,9 +28,20 @@
     },
     "info": {
       "title": "معلومات إضافية",
-      "items": [
-      
-      ]
-    }
+      "items": []
+    },
+    "location": {
+          "title": "الموقع",
+          "items": [
+            "https://maps.app.goo.gl/kbw5AhGShUuQ5Boo7"
+            
+          ]
+        },
+        "prices": {
+          "title": "الأسعار",
+          "items": [
+            "https://bayut.propforce.com/en/inventory?projectIds=3138"
+          ]
+        }
   }
 }

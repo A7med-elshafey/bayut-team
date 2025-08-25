@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { Home as HomeIcon, FolderKanban } from "lucide-react";
@@ -34,7 +35,8 @@ function ProfileCarousel() {
           className="absolute inset-0 w-full h-full object-cover"
         />
       </AnimatePresence>
-    </div>
+    <Footer />
+</div>
   );
 }
 
@@ -105,3 +107,6 @@ export default function Home() {
     </div>
   );
 }
+
+// rm -rf node_modules package-lock.json
+// npm ci

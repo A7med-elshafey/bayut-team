@@ -1,7 +1,10 @@
 {
   "id": "jood-3",
   "name": "برج جود3",
-  "category": { "key": "towers", "label": "الأبراج" },
+  "category": {
+    "key": "towers",
+    "label": "الأبراج"
+  },
   "status": "ready",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-3/cover/cover-jood-3.png",
   "sections": {
@@ -24,6 +27,19 @@
       "items": [
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf"
       ]
-    }
+    },
+    "location": {
+          "title": "الموقع",
+          "items": [
+            "https://maps.app.goo.gl/SMhesL75sqB2yerc8"
+            
+          ]
+        },
+        "prices": {
+          "title": "الأسعار",
+          "items": [
+            "https://bayut.propforce.com/en/inventory?projectIds=3055"
+          ]
+        }
   }
 }

@@ -1,7 +1,10 @@
 {
   "id": "aknan-23",
   "name": "اكنان-23",
-  "category": { "key": "apartments", "label": "الشقق" },
+  "category": {
+    "key": "apartments",
+    "label": "الشقق"
+  },
   "status": "under-construction",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/cover/cover.png",
   "sections": {
@@ -11,7 +14,6 @@
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/pdfs/Aknan-23-Catalogue.pdf",
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/pdfs/Aknan-23-Payment+Plan.pdf",
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/pdfs/Sales-Kit-Aknan-23.pdf"
-
       ]
     },
     "videos": {
@@ -28,6 +30,19 @@
       "items": [
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf"
       ]
-    }
+    },
+    "location": {
+         "title": "الموقع",
+         "items": [
+           "https://maps.app.goo.gl/P4UraYfz7vzhR7mE9"
+           
+         ]
+       },
+       "prices": {
+         "title": "الأسعار",
+         "items": [
+           "https://bayut.propforce.com/en/inventory?projectIds=3086"
+         ]
+       }
   }
 }

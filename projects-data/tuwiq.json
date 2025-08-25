@@ -1,7 +1,10 @@
 {
   "id": "tuwiq",
   "name": "ادوار-طويق",
-  "category": { "key": "towers", "label": "الأبراج" },
+  "category": {
+    "key": "towers",
+    "label": "الأبراج"
+  },
   "status": "under-construction",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/cover/cover.png",
   "sections": {
@@ -23,7 +26,19 @@
     "info": {
       "title": "معلومات إضافية",
       "items": [
-     "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/info/contract-tuwiq.pdf"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/info/contract-tuwiq.pdf"
+      ]
+    },
+    "location": {
+      "title": "الموقع",
+      "items": [
+        "https://maps.app.goo.gl/zwBhqBkTcf4FENxY8"
+      ]
+    },
+    "prices": {
+      "title": "الأسعار",
+      "items": [
+        "https://bayut.propforce.com/en/inventory?projectIds=3090"
       ]
     }
   }

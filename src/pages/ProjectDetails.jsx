@@ -18,6 +18,8 @@ export default function ProjectDetails() {
     pdfs: S.pdfs?.items?.length || 0,
     videos: S.videos?.items?.length || 0,
     info: S.info?.items?.length || 0,
+    location: S.location?.items?.length || 0,
+    prices: S.prices?.items?.length || 0,
   };
 
   return (
@@ -34,14 +36,35 @@ export default function ProjectDetails() {
             {project.name}
           </h1>
           <div className="flex flex-wrap gap-3 justify-end">
-            <Link to={`/projects/${project.id}/pdfs`} className="px-4 py-2 rounded-xl bg-green-100 hover:bg-green-200 text-green-800">
+            <Link
+              to={`/projects/${project.category?.key}/${project.id}/pdfs`}
+              className="px-4 py-2 rounded-xl bg-green-100 hover:bg-green-200 text-green-800"
+            >
               ملفات PDF ({counts.pdfs})
             </Link>
-            <Link to={`/projects/${project.id}/videos`} className="px-4 py-2 rounded-xl bg-green-100 hover:bg-green-200 text-green-800">
+            <Link
+              to={`/projects/${project.category?.key}/${project.id}/videos`}
+              className="px-4 py-2 rounded-xl bg-green-100 hover:bg-green-200 text-green-800"
+            >
               الفيديوهات ({counts.videos})
             </Link>
-            <Link to={`/projects/${project.id}/info`} className="px-4 py-2 rounded-xl bg-green-100 hover:bg-green-200 text-green-800">
+            <Link
+              to={`/projects/${project.category?.key}/${project.id}/info`}
+              className="px-4 py-2 rounded-xl bg-green-100 hover:bg-green-200 text-green-800"
+            >
               معلومات إضافية ({counts.info})
+            </Link>
+            <Link
+              to={`/projects/${project.category?.key}/${project.id}/location`}
+              className="px-4 py-2 rounded-xl bg-green-100 hover:bg-green-200 text-green-800"
+            >
+              الموقع ({counts.location})
+            </Link>
+            <Link
+              to={`/projects/${project.category?.key}/${project.id}/prices`}
+              className="px-4 py-2 rounded-xl bg-green-100 hover:bg-green-200 text-green-800"
+            >
+              قائمة الأسعار ({counts.prices})
             </Link>
           </div>
         </div>

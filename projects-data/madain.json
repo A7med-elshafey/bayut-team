@@ -1,7 +1,10 @@
 {
   "id": "madain",
   "name": "مداين",
-  "category": { "key": "apartments", "label": "الشقق" },
+  "category": {
+    "key": "apartments",
+    "label": "الشقق"
+  },
   "status": "ready",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/cover/cover.png",
   "sections": {
@@ -16,15 +19,25 @@
     },
     "videos": {
       "title": "الفيديوهات",
-      "items": [
-
-
-      ]
+      "items": []
     },
     "info": {
       "title": "معلومات إضافية",
+      "items": []
+    },
+    "location": {
+      "title": "الموقع",
       "items": [
+        "https://maps.app.goo.gl/Fr1mRrPbm7vuHxQB8"
+        
+      ]
+    },
+    "prices": {
+      "title": "الأسعار",
+      "items": [
+        "https://bayut.propforce.com/en/inventory?projectIds=3018"
       ]
     }
   }
+
 }

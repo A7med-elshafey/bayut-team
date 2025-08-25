@@ -1,7 +1,10 @@
 {
   "id": "calma-tower",
   "name": "برج-كالما",
-  "category": { "key": "towers", "label": "الأبراج" },
+  "category": {
+    "key": "towers",
+    "label": "الأبراج"
+  },
   "status": "under-construction",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/cover/cover.png",
   "sections": {
@@ -16,14 +19,24 @@
     },
     "videos": {
       "title": "الفيديوهات",
-      "items": [
-      ]
+      "items": []
     },
     "info": {
       "title": "معلومات إضافية",
-      "items": [
-     
-      ]
-    }
+      "items": []
+    },
+    "location": {
+          "title": "الموقع",
+          "items": [
+            "https://maps.app.goo.gl/MNgwobPN3Qp7qgj88"
+            
+          ]
+        },
+        "prices": {
+          "title": "الأسعار",
+          "items": [
+            "https://bayut.propforce.com/en/inventory?projectIds=3147"
+          ]
+        }
   }
 }

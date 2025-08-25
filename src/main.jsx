@@ -10,21 +10,5 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
-
-// # تهيئة المشروع كـ git repo
-// git init
-
-// # ربط المشروع بالـ repository بتاعك على GitHub
-// git remote add origin https://github.com/YOUR_USERNAME/bayut-team.git
-
-// # إضافة كل الملفات
-// git add .
-
-// # حفظ نسخة أولى
-// git commit -m "Initial commit - Bayut Team project"
-
-// # رفع الملفات على فرع main
-// git branch -M main
-// git push -u origin main
-
-//  A7med-elshafey/bayut-team
+// npm install -g vercel
+// vercel --prod
