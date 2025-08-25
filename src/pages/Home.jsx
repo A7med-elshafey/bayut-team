@@ -108,5 +108,8 @@ export default function Home() {
   );
 }
 
-// rm -rf node_modules package-lock.json
-// npm ci
+// git add .
+// git commit -m "Add 2 new users to users.json"
+
+// git commit -m "Update authentication system and welcome overlay"
+// git push origin main
