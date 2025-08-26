@@ -109,7 +109,7 @@ export default function Home() {
 }
 
 // git add .
-// git commit -m "Add 2 new users to users.json"
+// git commit -m "Add 2 new users "
 
-// git commit -m "Update authentication system and welcome overlay"
+
 // git push origin main
