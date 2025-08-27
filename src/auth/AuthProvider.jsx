@@ -39,7 +39,7 @@ export default function AuthProvider({ children }) {
       setShowWelcome(true);
       // Hide welcome after 2s
 // Hide welcome after 3s
-setTimeout(() => setShowWelcome(false), 2500);
+setTimeout(() => setShowWelcome(false), 6000);
 
       return s;
     } catch (err) {

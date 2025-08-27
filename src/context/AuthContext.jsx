@@ -28,7 +28,7 @@ export function AuthProvider({ children }) {
     const s = await authLogin(u, p);
     setSession(s);
     setShowWelcome(true);
-    setTimeout(() => setShowWelcome(false), 2000);
+    setTimeout(() => setShowWelcome(false), 1000);
     return s;
   };
   const logout = () => {

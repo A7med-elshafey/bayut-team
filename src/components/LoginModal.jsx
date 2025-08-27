@@ -1,13 +1,21 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 
 export default function LoginModal({ open }) {
-  const { login } = useAuth();
+  const { login, session } = useAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  // 🟢 reset لما يحصل logout أو المودال يفتح
+  useEffect(() => {
+    if (!session || open) {
+      setUsername("");
+      setPassword("");
+      setError("");
+    }
+  }, [session, open]);
 
   if (!open) return null;
 
@@ -30,7 +38,9 @@ export default function LoginModal({ open }) {
     <div className="fixed inset-0 z-[100] bg-black/40 backdrop-blur-md flex items-center justify-center p-4">
       <div className="w-full max-w-sm rounded-2xl bg-white shadow-xl p-6">
         <h2 className="text-2xl font-bold mb-1 text-center">Sign in</h2>
-        <p className="text-sm text-gray-500 mb-6 text-center">Please enter your details</p>
+        <p className="text-sm text-gray-500 mb-6 text-center">
+          Please enter your details
+        </p>
 
         <form onSubmit={onSubmit} className="space-y-4">
           <div>
