@@ -1,10 +1,9 @@
 import Footer from "../components/Footer";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { Home as HomeIcon, FolderKanban } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
 
 // 10 صور من الملف التعريفي
 // const images = Array.from({ length: 10 }, (_, i) => `/assets/company/profile${i + 1}.jpg`);
@@ -35,8 +34,7 @@ function ProfileCarousel() {
           className="absolute inset-0 w-full h-full object-cover"
         />
       </AnimatePresence>
-    <Footer />
-</div>
+    </div>
   );
 }
 
@@ -107,9 +105,3 @@ export default function Home() {
     </div>
   );
 }
-
-// git add .
-// git commit -m "Add 2 new users "
-
-
-// git push origin main
