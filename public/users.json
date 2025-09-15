@@ -56,8 +56,8 @@
       "fullName": "Mohamed Abdou"
     },
      {
-      "username": "mohamed.jamal",
-      "password": "mj1894",
+      "username": "mohamed.gamal",
+      "password": "mg1894",
       "fullName": "Mohamed Jamal"
     },
      {
@@ -134,6 +134,21 @@
       "username": "wafa",
       "password": "941997",
       "fullName": "KHALTii"
+    },
+     {
+      "username": "Youssef852",
+      "password": "Y0112992871",
+      "fullName": "Youssef"
+    },
+     {
+      "username": "Abdullahns",
+      "password": "A0596461243",
+      "fullName": "Abdullah"
+    },
+     {
+      "username": "Nour123",
+      "password": "Na@123!123!",
+      "fullName": "Nour"
     }
   ]
 }

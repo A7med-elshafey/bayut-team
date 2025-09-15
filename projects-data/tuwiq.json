@@ -20,7 +20,9 @@
     "videos": {
       "title": "الفيديوهات",
       "items": [
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/videos/tuwiq-video.mp4"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/videos/tuwiq-video.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/videos/Vitural-tour-first-floor-tuwiq.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/videos/Vitural-tour-ground-floor-tuwiq.mp4"
       ]
     },
     "info": {

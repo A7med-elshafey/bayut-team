@@ -21,7 +21,9 @@
     "videos": {
       "title": "الفيديوهات",
       "items": [
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/videos/trump-tower-jeddah.mp4"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/videos/trump-tower-jeddah.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/videos/Promo-2-trump-tower.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/videos/Promo-1-trump-tower.mp4"
       ]
     },
     "info": {

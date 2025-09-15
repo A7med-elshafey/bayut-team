@@ -18,7 +18,8 @@
     "videos": {
       "title": "الفيديوهات",
       "items": [
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/videos/Full-project-osous-eye.mp4"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/videos/Full-project-osous-eye.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/videos/Promo-osus-eye.mp4"
       ]
     },
     "info": {

@@ -19,7 +19,7 @@
     },
     "videos": {
       "title": "الفيديوهات",
-      "items": []
+      "items": ["https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/videos/Calma-tower-presentaiton.mp4"]
     },
     "info": {
       "title": "معلومات إضافية",
