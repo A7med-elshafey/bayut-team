@@ -16,9 +16,9 @@
       "fullName": "Khorim"
     },
      {
-      "username": "atheer",
-      "password": "A1995",
-      "fullName": "Atheer"
+      "username": "nour123",
+      "password": "Na@123!123!",
+      "fullName": "Nour"
     },    
      {
       "username": "ahmed",
@@ -66,19 +66,14 @@
       "fullName": "Danish Nawaz"
     },
      {
-      "username": "talal",
-      "password": "Aa123",
-      "fullName": "Talal Alshubayshiri"
+      "username": "youssef852",
+      "password": "Y0112992871",
+      "fullName": "Youssef"
     },
      {
       "username": "emadsubh",
       "password": "Mira&talya@102030",
       "fullName": "Emad Subh"
-    },
-     {
-      "username": "saleh411",
-      "password": "As1234",
-      "fullName": "Saleh"
     },
      {
       "username": "mohamedelshafey",
@@ -110,11 +105,7 @@
       "password": "9581",
       "fullName": "Talal Alanzi"
     },
-     {
-      "username": "faisal",
-      "password": "Milito22",
-      "fullName": "Faisal"
-    },
+   
      {
       "username": "samy",
       "password": "151093",
@@ -136,19 +127,25 @@
       "fullName": "KHALTii"
     },
      {
-      "username": "Youssef852",
-      "password": "Y0112992871",
-      "fullName": "Youssef"
+      "username": "sana",
+      "password": "123456",
+      "fullName": "Sana"
     },
      {
-      "username": "Abdullahns",
+      "username": "wa",
+      "password": "123",
+      "fullName": "Waleed"
+    },
+     {
+      "username": "abdulslam",
+      "password": "123456",
+      "fullName": "abdulslam"
+    },
+     {
+      "username": "abdullahns",
       "password": "A0596461243",
-      "fullName": "Abdullah"
-    },
-     {
-      "username": "Nour123",
-      "password": "Na@123!123!",
-      "fullName": "Nour"
+      "fullName": "abdulla"
     }
+   
   ]
 }

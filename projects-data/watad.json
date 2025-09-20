@@ -1,43 +1,31 @@
 {
-  "id": "Watad-tower",
+  "id": "watad",
   "name": "برج-وتد",
-  "category": {
-    "key": "towers",
-    "label": "الأبراج"
-  },
+  "category": { "key": "towers", "label": "الأبراج" },
   "status": "under-construction",
-  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/Wated-tower/cover/cover.png",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/watad-tower/cover/cover.png",
   "sections": {
     "pdfs": {
       "title": "ملفات PDF",
       "items": [
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/Wated-tower/pdfs/3-Fold-Watad.pdf",
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/Wated-tower/pdfs/Fach-Sheet-Watad.pdf",
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/Wated-tower/pdfs/Guarantees%26Specifications-Watad.pdf",
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/Wated-tower/pdfs/Payment-Plan-Watad.pdf",
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/Wated-tower/pdfs/Sales-Kit-Watad.pdf"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/watad-tower/pdfs/3-Fold-Watad.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/watad-tower/pdfs/Fach-Sheet-Watad.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/watad-tower/pdfs/Guarantees%26Specifications-Watad.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/watad-tower/pdfs/Payment-Plan-Watad.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/watad-tower/pdfs/Sales-Kit-Watad.pdf"
       ]
     },
-    "videos": {
-      "title": "الفيديوهات",
-      "items": []
-    },
-    "info": {
-      "title": "معلومات إضافية",
-      "items": []
-    },
+    "videos": { "title": "الفيديوهات", "items": [
+      "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/watad-tower/videos/Watad-location-video.mp4"
+    ] },
+    "info":   { "title": "معلومات إضافية", "items": [] },
     "location": {
-          "title": "الموقع",
-          "items": [
-            "https://maps.app.goo.gl/QtvqemKnE7Dx1eoZ9"
-            
-          ]
-        },
-        "prices": {
-          "title": "الأسعار",
-          "items": [
-            "https://bayut.propforce.com/en/inventory?projectIds=3151"
-          ]
-        }
+      "title": "الموقع",
+      "items": ["https://maps.app.goo.gl/QtvqemKnE7Dx1eoZ9"]
+    },
+    "prices": {
+      "title": "الأسعار",
+      "items": ["https://bayut.propforce.com/en/inventory?projectIds=3151"]
+    }
   }
 }

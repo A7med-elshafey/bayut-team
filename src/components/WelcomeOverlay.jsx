@@ -1,17 +1,18 @@
 import { useAuth } from "../auth/AuthContext";
 import { useState, useEffect } from "react";
 
+const MEDIA_URL = "https://bayut-projects.s3.eu-north-1.amazonaws.com/Welcome/Welcome-gif.mp4";
+
 export default function WelcomeOverlay() {
   const { showWelcome, session } = useAuth();
   const [visible, setVisible] = useState(false);
 
-  // رسائل تحفيزية لكل يوزر (ممكن تزود/تغير)
-  const motivationalMessages = {
+  // رسائل تحفيزية لكل يوزر (زي ما هي بدون أي تعديل)
+ const motivationalMessages = {
     "elshafey": "اليوم هو يومك الجديد، مليء بالتحديات والفرص. أنت قادر على تحقيق النجاح والتفوق. ابدأ يومك بطاقة إيجابية وابتسامة مشرقة. 💪🌟",
     "boss": `Good morning BOSS🌟
 Your leadership, guidance, and support inspire the entire team every day. Because of your vision and encouragement, we are confident that the team will rise to every challenge and achieve great success. Thank you for believing in us and guiding us toward excellence. 💼💪🚀`,
     "khorim": "ابدأ يومك بطاقة إيجابية 🌟",
-    "atheer": "صباح الفل اثير , اليوم هو فرصة جديدة لإثبات قدراتك. استغل كل لحظة لتحقيق أهدافك. أنت نجم في سماء المبيعات. ✨🚀",
     "ahmed": "صباح الفل يا كبير , اليوم هو يومك. استمتع بكل لحظة وحقق أهدافك بثقة. أنت قائد في مجالك. 🌹📊",
     "moustafa": "صباح الفل يعم مصطفي , يومك كله رزق ونشاط ان شاء الله وجهز نفسك للاجازه بس عاوزين بيعه الاول قبل ما تنزل والنهارده هو اليوم المناسب لكدا , انت تقدر🌟💪",
     "naelsalti": "Good Morning, mr.nael, Wishing you a day full of positivity and excellence as always! 🌟 Today is your day to create even more successes. Keep shining and showing the amazing talent that makes you truly exceptional! 💪✨🏆",
@@ -33,22 +34,25 @@ Your leadership, guidance, and support inspire the entire team every day. Becaus
     "rawan99": "الملكة روان صباح الفل , يوم جديد، فرصة جديدة. استمتعي بكل لحظة وحققي أهدافك بثقة. أنتِ مصدر إلهام للجميع. 🌸💼",
     "afnan": "الملكه افنان , يوم جديد، فرصة جديدة. استمتعي بكل لحظة وحققي أهدافك بثقة. أنتِ مصدر إلهام للجميع. 🌸💼",
     "wafa": "خالتي وفاء صباح الفل , خلاص هانت وهتنزلي اجازة خلي الايام اللي باقيه كلها تميز وابداع كالعادة النهارده يومك لصنع انجاز ✨🏆🌷",
-    "Nour123":"صباح الفل يا نور واهلا بيكي في شركة بيوت ان شاء الله تكون بداية موفقه وتكسري الدنيا ✨🏆🌷",
-    "Abdullahns":"صباح الفل يا عبد الله واهلا بيك في شركة بيوت ان شاء الله تكون بداية موفقه وتكسر الدنيا  ✨🏆🌷",
-    "Youssef852":"صباح الفل يا يوسف واهلا بيك في شركة بيوت ان شاء الله تكون بداية موفقه وتكسر الدنيا ✨🏆🌷"
+    "nour123":"صباح الفل يا نور واهلا بيكي في تيم الوحوش  ان شاء الله تكون بداية موفقه وتكسري الدنيا ✨🏆🌷",
+    "abdullahns":"صباح الفل يا عبد الله واهلا بيك في تيم الوحوش ان شاء الله تكون بداية موفقه وتكسر الدنيا  ✨🏆🌷",
+    "youssef852":"صباح الفل يا يوسف واهلا بيك في تيم الوحوش ان شاء الله تكون بداية موفقه وتكسر الدنيا ✨🏆🌷",
+    "sana":"صباح الفل يا ثناء واهلا بيكي في تيم الوحوش ان شاء الله تكون بداية موفقه وتكسري الدنيا ✨🏆🌷",
+    "wa":"صباح الفل يا وليد يومك كله نشاظ وطاقه ان شاء الله استمر في التقدم ومساعده الفريق لتحقيق نتائج مبهره  ✨🏆🌷 "
     // "wafa": "كل خطوة صغيرة بتقربك لهدفك 🏆",
   };
 
-useEffect(() => {
-  let timer;
-  if (showWelcome && session) {
-    setVisible(true);
-  } else {
-    timer = setTimeout(() => setVisible(false), 1);
-  }
-  return () => clearTimeout(timer);
-}, [showWelcome, session]);
-
+  useEffect(() => {
+    let timer;
+    if (showWelcome && session) {
+      setVisible(true);
+      // إخفاء تلقائي بعد 11 ثانية
+      timer = setTimeout(() => setVisible(false), 15000);
+    } else {
+      timer = setTimeout(() => setVisible(false), 1);
+    }
+    return () => clearTimeout(timer);
+  }, [showWelcome, session]);
 
   if (!visible) return null;
 
@@ -64,6 +68,25 @@ useEffect(() => {
       }`}
     >
       <div className="w-full max-w-lg bg-gradient-to-br from-green-100 via-white to-blue-100 backdrop-blur-md border border-white/70 shadow-2xl rounded-3xl p-10 text-center transition-transform duration-500 transform animate-in fade-in zoom-in">
+
+        {/* ✅ الإضافة 1: فيديو الـ GIF في الأعلى */}
+        <div className="relative overflow-hidden rounded-2xl shadow-lg">
+          <video
+            src={MEDIA_URL}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-56 object-cover"
+          />
+        </div>
+
+        {/* ✅ الإضافة 2: السطر الثابت تحت الفيديو */}
+        <h3 className="mt-5 text-2xl font-extrabold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-green-700 to-emerald-500">
+          Let&apos;s Make it again 💪
+        </h3>
+
+        {/* 👇 باقي العناصر الأصلية كما هي */}
         <div className="mx-auto h-20 w-20 rounded-full bg-green-200 flex items-center justify-center shadow-lg">
           <span className="text-4xl">✅💪</span>
         </div>
@@ -73,6 +96,7 @@ useEffect(() => {
         <p className="mt-2 text-xl font-semibold text-gray-800">
           {session?.fullName || session?.name}
         </p>
+
         {/* الرسالة التحفيزية */}
         <p className="mt-4 text-lg font-medium text-gray-700 italic">
           {message}

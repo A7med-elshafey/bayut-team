@@ -12,3 +12,7 @@ createRoot(document.getElementById('root')).render(
 
 // npm install -g vercel
 // vercel --prod
+// git status                 # اتأكد إيه اللي اتغيّر
+// git add -A                 # ضيف كل التعديلات
+// git commit -m "feat: search + welcome video + fixes"
+// git push origin main       # ادفَع على main

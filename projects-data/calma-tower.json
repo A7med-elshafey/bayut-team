@@ -19,7 +19,14 @@
     },
     "videos": {
       "title": "الفيديوهات",
-      "items": ["https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/videos/Calma-tower-presentaiton.mp4"]
+      "items": [
+        
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/videos/Calma-tower-presentaiton.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/videos/Calma-tower-real-video.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/videos/Calma-tower-VR-tour-2bed.mp4"
+     
+      
+    ]
     },
     "info": {
       "title": "معلومات إضافية",

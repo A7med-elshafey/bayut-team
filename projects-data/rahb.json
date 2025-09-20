@@ -20,7 +20,17 @@
     },
     "videos": {
       "title": "الفيديوهات",
-      "items": []
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/Rahb/videos/Apartment-1-3bed-rahb.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/Rahb/videos/Apartment-12-duplex-rahb.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/Rahb/videos/apartment-14-3bed-rahb.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/Rahb/videos/apartment-17-ebed-rahb.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/Rahb/videos/apartment-2-ebed-rahb.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/Rahb/videos/Apartment-3-2bed-rahb.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/Rahb/videos/entrence-rahb.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/Rahb/videos/real-video-location-rahb.mp4"
+
+      ]
     },
     "info": {
       "title": "معلومات إضافية",

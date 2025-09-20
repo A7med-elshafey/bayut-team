@@ -50,6 +50,14 @@
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/cover/cover.png"
   },
   {
+  "id": "watad",
+  "name": "برج-وتد",
+  "category": { "key": "towers", "label": "الأبراج" },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/watad-tower/cover/cover.png"
+},
+  
+  {
     "id": "aknan-23",
     "name": "اكنان-23",
     "category": { "key": "apartments", "label": "الشقق" },
@@ -97,6 +105,13 @@
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "ready",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/cover/cover.png"
+  },
+    {
+    "id": "rahb",
+    "name": "رحب",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "ready",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/Rahb/cover/cover.png"
   },
 
   {

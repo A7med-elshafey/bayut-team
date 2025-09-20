@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchProjects } from "../services/api";
@@ -10,25 +9,43 @@ export default function CategoryProjects() {
 
   useEffect(() => {
     let mounted = true;
-    fetchProjects().then((data) => {
-      if (!mounted) return;
-      const filtered = (Array.isArray(data) ? data : []).filter(
-        (x) => x?.category?.key === category && x?.status === status
-      );
-      setProjects(filtered);
-      setLoading(false);
-    });
-    return () => { mounted = false; };
+    fetchProjects()
+      .then((data) => {
+        if (!mounted) return;
+        const filtered = (Array.isArray(data) ? data : []).filter(
+          (x) => x?.category?.key === category && x?.status === status
+        );
+        setProjects(filtered);
+        setLoading(false);
+      })
+      .catch(() => {
+        if (!mounted) return;
+        setProjects([]);
+        setLoading(false);
+      });
+    return () => {
+      mounted = false;
+    };
   }, [category, status]);
+
+  if (loading) {
+    return (
+      <div className="max-w-6xl mx-auto px-4 pt-24">
+        <div className="p-6 bg-gray-50 rounded-xl text-gray-500 text-right">
+          جارِ التحميل…
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-6xl mx-auto px-4 pt-24">
-      <h1 className="text-2xl font-bold mb-6">المشاريع</h1>
+      <h1 className="text-2xl font-bold mb-6 text-right">المشاريع</h1>
 
-      {loading ? (
-        <div className="p-6 bg-gray-50 rounded-xl text-gray-500">جارِ التحميل…</div>
-      ) : projects.length === 0 ? (
-        <div className="p-6 bg-gray-50 rounded-xl text-gray-500">لا توجد مشاريع مطابقة</div>
+      {projects.length === 0 ? (
+        <div className="p-6 bg-gray-50 rounded-xl text-gray-500 text-right">
+          لا توجد مشاريع مطابقة
+        </div>
       ) : (
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
@@ -38,6 +55,7 @@ export default function CategoryProjects() {
                   src={project.cover}
                   alt={project.name || project.id}
                   className="w-full h-48 object-cover rounded-xl mb-3"
+                  loading="lazy"
                 />
               )}
               <div className="flex items-center justify-between mb-3">
