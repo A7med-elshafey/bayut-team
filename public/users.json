@@ -145,7 +145,31 @@
       "username": "abdullahns",
       "password": "A0596461243",
       "fullName": "abdulla"
+    },
+     {
+      "username": "abdulmuhsen",
+      "password": "131000",
+      "fullName": "abdulmuhsen"
     }
+   ,
+     {
+      "username": "noura",
+      "password": "1500000",
+      "fullName": "Noura"
+    }
+   ,
+     {
+      "username": "majd",
+      "password": "558855",
+      "fullName": "Majd"
+    }
+   ,
+     {
+      "username": "muhamed",
+      "password": "1500000",
+      "fullName": "Muhamed"
+    }
+   
    
   ]
 }
