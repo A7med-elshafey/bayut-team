@@ -77,6 +77,12 @@
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "under-construction",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/cover/cover.png"
+  }, {
+    "id": "masharq-2",
+    "name": "مشارق-2",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq2/cover/cover.jpeg"
   },
   {
     "id": "osus-eye",

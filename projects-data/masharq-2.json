@@ -1,0 +1,47 @@
+{
+  "id": "masharq-2",
+  "name": "مشارق-2",
+  "category": {
+    "key": "apartments",
+    "label": "الشقق"
+  },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq2/cover/cover.jpeg",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq2/pdfs/Sales-Kit-Mashreq-2.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq2/pdfs/Unit-Reservation-Form-Mashreq-02.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq2/pdfs/Payment-Plan-EN-Mashreq-2.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq2/pdfs/Payment-Plan-Arabic-Mashreq-2.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq2/pdfs/Bank-Account-Detail-Mashreq-02.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        ""
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        ""
+      ]
+    },
+    "location": {
+          "title": "الموقع",
+          "items": [
+            "https://maps.app.goo.gl/ZGNsovCMgBzkEZEeA"
+            
+          ]
+        },
+        "prices": {
+          "title": "الأسعار",
+          "items": [
+            "https://bayut.propforce.com/en/inventory?projectIds=3159"
+          ]
+        }
+  }
+}
