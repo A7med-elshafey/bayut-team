@@ -169,7 +169,18 @@
       "password": "1500000",
       "fullName": "Muhamed"
     }
-   
+    ,
+     {
+      "username": "abdulaziz",
+      "password": "1999",
+      "fullName": "Abdulaziz"
+    }
+    ,
+     {
+      "username": "new",
+      "password": "1500000",
+      "fullName": "New"
+    }
    
   ]
 }
