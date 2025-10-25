@@ -22,7 +22,8 @@
     "videos": {
       "title": "الفيديوهات",
       "items": [
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/videos/Project-video.mp4"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/videos/Project-video.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/videos/aligria-apartment.mp4"
       ]
     },
     "info": {

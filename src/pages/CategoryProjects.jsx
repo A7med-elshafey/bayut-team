@@ -7,12 +7,42 @@ export default function CategoryProjects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // تقويم ميلادي بالعربي (ar-EG) وأرقام لاتينية
+  const fmtHandover = (v) => {
+    if (!v) return "—";
+    const locale = "ar-EG";
+    const base = { calendar: "gregory", numberingSystem: "latn" };
+
+    // سنة فقط
+    if (/^\d{4}$/.test(v)) {
+      const y = Number(v);
+      const d = new Date(Date.UTC(y, 0, 1));
+      return new Intl.DateTimeFormat(locale, { ...base, year: "numeric" }).format(d);
+    }
+
+    // سنة-شهر
+    if (/^\d{4}-\d{2}$/.test(v)) {
+      const [y, m] = v.split("-").map(Number);
+      const d = new Date(Date.UTC(y, m - 1, 1));
+      return new Intl.DateTimeFormat(locale, { ...base, month: "long", year: "numeric" }).format(d);
+    }
+
+    // تاريخ كامل
+    const d = new Date(v);
+    if (!isNaN(d)) {
+      return new Intl.DateTimeFormat(locale, { ...base, day: "numeric", month: "long", year: "numeric" }).format(d);
+    }
+
+    return String(v);
+  };
+
   useEffect(() => {
     let mounted = true;
     fetchProjects()
       .then((data) => {
         if (!mounted) return;
-        const filtered = (Array.isArray(data) ? data : []).filter(
+        const list = Array.isArray(data) ? data : [];
+        const filtered = list.filter(
           (x) => x?.category?.key === category && x?.status === status
         );
         setProjects(filtered);
@@ -60,11 +90,13 @@ export default function CategoryProjects() {
               )}
               <div className="flex items-center justify-between mb-3">
                 <h2 className="text-lg font-semibold">{project.name}</h2>
-                {project.status && (
-                  <span className="text-xs px-2 py-1 rounded bg-green-100 text-green-700">
-                    {project.status}
-                  </span>
-                )}
+
+                {/* نفس اللون الأخضر */}
+                <span className="text-xs px-2 py-1 rounded bg-green-100 text-green-700 whitespace-nowrap">
+                  {project.status === "under-construction"
+                    ? `موعد التسليم: ${fmtHandover(project.handoverDate)}`
+                    : project.status}
+                </span>
               </div>
 
               <div className="flex flex-wrap gap-2">

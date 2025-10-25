@@ -26,6 +26,7 @@
     "name": "برج جود9",
     "category": { "key": "towers", "label": "الأبراج" },
     "status": "under-construction",
+    "handoverDate": "2026-04",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-9/cover/cover-jood-9.png"
   },
   {
@@ -33,6 +34,7 @@
     "name": "برج-ترامب-جده",
     "category": { "key": "towers", "label": "الأبراج" },
     "status": "under-construction",
+    "handoverDate": "2029",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/cover/cover.png"
   },
     {
@@ -40,6 +42,7 @@
     "name": "برج-جود-6",
     "category": { "key": "towers", "label": "الأبراج" },
     "status": "under-construction",
+    "handoverDate": "2027",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood6/cover/cover-jood-6.png"
   },
   {
@@ -47,6 +50,7 @@
     "name": "برج-كالما",
     "category": { "key": "towers", "label": "الأبراج" },
     "status": "under-construction",
+    "handoverDate": "2027-06",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/cover/cover.png"
   },
   {
@@ -54,6 +58,7 @@
   "name": "برج-وتد",
   "category": { "key": "towers", "label": "الأبراج" },
   "status": "under-construction",
+  "handoverDate": "2027",
   "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/watad-tower/cover/cover.png"
 },
   
@@ -62,6 +67,7 @@
     "name": "اكنان-23",
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "under-construction",
+    "handoverDate": "2025-12-25",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/cover/cover.png"
   },
    {
@@ -69,6 +75,7 @@
     "name": "اكنان-24",
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "under-construction",
+    "handoverDate": "2025-12-25",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan24/cover/cover.png"
   },
    {
@@ -76,12 +83,14 @@
     "name": "مشارق",
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "under-construction",
+    "handoverDate": "2026-06",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq1/cover/cover.png"
   }, {
     "id": "masharq-2",
     "name": "مشارق-2",
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "under-construction",
+    "handoverDate": "2025-02",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/masharq2/cover/cover.jpeg"
   },
   {
@@ -89,6 +98,7 @@
     "name": "عين-اسس",
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "under-construction",
+    "handoverDate": "2028",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/cover/cover.png"
   },
     {
@@ -96,6 +106,7 @@
     "name": "صله-3",
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "under-construction",
+    "handoverDate": "2026-10",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/cover/cover.png"
   },
       {
@@ -103,6 +114,7 @@
     "name": "اليغريا-شقق",
     "category": { "key": "apartments", "label": "الشقق" },
     "status": "under-construction",
+    "handoverDate": "2026-06",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aligria-appartments/cover/cover.jpeg"
   },
     {
@@ -125,6 +137,7 @@
     "name": "اليغريا-النرجس",
     "category": { "key": "villas", "label": "الفلل" },
     "status": "under-construction",
+    "handoverDate": "2026-10",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/aligria-villas/cover/cover.jpeg"
   },
   {
@@ -132,6 +145,7 @@
     "name": "رسين-الخزام",
     "category": { "key": "villas", "label": "الفلل" },
     "status": "under-construction",
+    "handoverDate": "2028",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/cover/cover.png"
   },
   {
@@ -153,6 +167,7 @@
     "name": "ادوار-طويق",
     "category": { "key": "floors", "label": "الادوار" },
     "status": "under-construction",
+    "handoverDate": "2027",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/tuwiq/cover/cover.png"
   }
 

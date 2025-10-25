@@ -13,7 +13,8 @@
       "items": [
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/pdfs/Aknan-23-Catalogue.pdf",
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/pdfs/Aknan-23-Payment+Plan.pdf",
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/pdfs/Sales-Kit-Aknan-23.pdf"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/pdfs/Sales-Kit-Aknan-23.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/videos/townhouse-aknan-23.mp4"
       ]
     },
     "videos": {

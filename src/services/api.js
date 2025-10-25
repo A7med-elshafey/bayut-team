@@ -1,5 +1,6 @@
 export const API_BASE = "https://bayut-projects.s3.eu-north-1.amazonaws.com";
 
+// يجلب قائمة المشاريع من الجذر /index.json
 export async function fetchProjects() {
   try {
     const res = await fetch(`${API_BASE}/index.json?ts=${Date.now()}`, {
@@ -24,12 +25,12 @@ async function tryFetchJson(url) {
   }
 }
 
+// يجلب بيانات مشروع مفرد من /projects-data/<id>.json (كما في هيكلة ملفاتك)
 export async function getProject(id) {
   try {
     const raw = String(id ?? "").trim();
     const slug = encodeURIComponent(raw.toLowerCase());
 
-    // جرّب أولاً الـ slug المصغّر، ثم كـ fallback جرّب القيمة كما هي
     const urls = [
       `${API_BASE}/projects-data/${slug}.json?ts=${Date.now()}`,
       `${API_BASE}/projects-data/${encodeURIComponent(
@@ -49,6 +50,7 @@ export async function getProject(id) {
   }
 }
 
+// توحيد عناوين الملفات إن احتجت
 export function resolveUrl(url) {
   if (!url) return url;
   if (url.startsWith("http://") || url.startsWith("https://")) return url;

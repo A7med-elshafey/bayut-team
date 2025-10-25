@@ -181,6 +181,30 @@
       "password": "1500000",
       "fullName": "New"
     }
+     ,
+     {
+      "username": "abdullah",
+      "password": "10040",
+      "fullName": "Abdullah"
+    }
+    ,
+     {
+      "username": "najla",
+      "password": "Najla@1995",
+      "fullName": "Najla"
+    }
+    ,
+     {
+      "username": "hezam",
+      "password": "123",
+      "fullName": "Hezam"
+    }
+    ,
+     {
+      "username": "modd18",
+      "password": "Mm155990",
+      "fullName": "Mod"
+    }
    
   ]
 }
