@@ -28,7 +28,9 @@
     },
     "info": {
       "title": "معلومات إضافية",
-      "items": []
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/floors/khozmaa-22/info/khozmaa22-brief.html"
+      ]
     },
     "location": {
           "title": "الموقع",

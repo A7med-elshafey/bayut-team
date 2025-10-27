@@ -26,7 +26,8 @@
       "items": [
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/contract.pdf",
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/escrow-account.pdf",
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/off-plan-sales-license.pdf"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/off-plan-sales-license.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/sella3/info/sella3-brief.html"
       ]
     },
     "location": {

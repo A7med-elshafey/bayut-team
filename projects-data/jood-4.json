@@ -23,7 +23,9 @@
     },
     "info": {
       "title": "معلومات إضافية",
-      "items": []
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-4/info/jood4-brief.html"
+      ]
     },
     "location": {
           "title": "الموقع",

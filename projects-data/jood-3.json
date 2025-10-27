@@ -25,7 +25,8 @@
     "info": {
       "title": "معلومات إضافية",
       "items": [
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-3/info/jood3-brief.html"
       ]
     },
     "location": {

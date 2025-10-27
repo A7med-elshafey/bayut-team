@@ -2,12 +2,12 @@
   "users": [
     {
       "username": "boss",
-      "password": "123456",
+      "password": "1",
       "fullName": "Big Boss"
     },
     {
       "username": "elshafey",
-      "password": "27101998",
+      "password": "271098",
       "fullName": "Shafey"
     },
     {
@@ -204,6 +204,36 @@
       "username": "modd18",
       "password": "Mm155990",
       "fullName": "Mod"
+    }
+    ,
+     {
+      "username": "abir",
+      "password": "3005",
+      "fullName": "Abir"
+    }
+    ,
+     {
+      "username": "saud",
+      "password": "2003",
+      "fullName": "Saud"
+    }
+    ,
+     {
+      "username": "ibrahim",
+      "password": "5377",
+      "fullName": "Ibrahim"
+    }
+    ,
+     {
+      "username": "saad",
+      "password": "S@a16",
+      "fullName": "Saad"
+    }
+    ,
+     {
+      "username": "nourah.saleh",
+      "password": "Deema1995",
+      "fullName": "Nourah"
     }
    
   ]

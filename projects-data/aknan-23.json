@@ -30,7 +30,8 @@
     "info": {
       "title": "معلومات إضافية",
       "items": [
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/damac/info/specs.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/aknan23/info/aknan23-brief.html"
       ]
     },
     "location": {

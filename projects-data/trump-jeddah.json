@@ -32,6 +32,10 @@
         {
           "url": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/info/Trump-Jeddah-DRAFT-SPA.pdf",
           "label": "نموذج عقد الوحدة"
+        },
+        {
+          "url": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/trump-jeddah/info/trump-jeddah-brief.html",
+          "label": "معلومات المشروع "
         }
       ]
     },

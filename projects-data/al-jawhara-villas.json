@@ -25,7 +25,9 @@
     },
     "info": {
       "title": "معلومات إضافية",
-      "items": []
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/al-jawhara-villas/info/al-jawhara-brief.html"
+      ]
     },
     "location": {
           "title": "الموقع",

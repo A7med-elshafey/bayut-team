@@ -28,6 +28,10 @@
         {
           "url": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-9/info/Contract-simple.pdf",
           "label": "نموذج عقد الوحدة"
+        },
+        {
+          "url": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/jood-9/info/jood9-brief.html",
+          "label": "معلومات المشروع "
         }
       ]
     },

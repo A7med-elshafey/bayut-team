@@ -30,7 +30,9 @@
     },
     "info": {
       "title": "معلومات إضافية",
-      "items": []
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/calma-tower/info/calma-tower-brief.html"
+      ]
     },
     "location": {
           "title": "الموقع",
