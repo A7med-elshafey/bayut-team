@@ -1,0 +1,51 @@
+{
+  "id": "saheel-villas",
+  "name": "vsdk-hgo.hl",
+  "category": {
+    "key": "villas",
+    "label": "الفلل"
+  },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/cover/cover-saheel.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/pdfs/Catalogue+-Saheel.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/pdfs/Fact-Sheet-Saheel.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/pdfs/Payment+Plan-Saheel.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/pdfs/Sales-Kit-Saheel.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/pdfs/Specification-+Saheel.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/videos/townhouse-300m.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/videos/elfursan-neighborhood.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/videos/Duplex-villa-325m.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/info/saheel-brief.html",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/info/VAT-Dyar-AlArabiya-Saheel.pdf"
+      ]
+    },
+    "location": {
+      "title": "الموقع",
+      "items": [
+        "https://maps.app.goo.gl/Azx46nQ42mVihojE7"
+        
+      ]
+    },
+    "prices": {
+      "title": "الأسعار",
+      "items": [
+        "https://bayut.propforce.com/en/inventory?projectIds=3096"
+      ]
+    }
+  }
+
+}

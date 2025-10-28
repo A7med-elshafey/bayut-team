@@ -235,6 +235,18 @@
       "password": "Deema1995",
       "fullName": "Nourah"
     }
+    ,
+     {
+      "username": "amjad",
+      "password": "1amjad23",
+      "fullName": "Amjad"
+    }
+    ,
+     {
+      "username": "mohammed",
+      "password": "155990",
+      "fullName": "Mohammed"
+    }
    
   ]
 }

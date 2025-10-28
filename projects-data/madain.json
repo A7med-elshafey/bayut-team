@@ -12,9 +12,9 @@
       "title": "ملفات PDF",
       "items": [
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Madain-Guarantees.pdf",
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Madain-Sales-Kit.pdf",
         "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Madain-Village-+3Fold.pdf",
-        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Madain-Village-Fact+Sheet.pdf"
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Madain-Village-Fact+Sheet.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/madain/pdfs/Sales-Kit+-Madain-Village.pdf"
       ]
     },
     "videos": {

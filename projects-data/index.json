@@ -149,6 +149,14 @@
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/cover/cover.png"
   },
   {
+    "id": "saheel-villas",
+    "name": "صهيل-الفرسان",
+    "category": { "key": "villas", "label": "الفلل" },
+    "status": "under-construction",
+    "handoverDate": "2027",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/Saheel-villas/cover/cover-saheel.png"
+  },
+  {
     "id": "al-jawhara-villas",
     "name": "فلل-الجوهرة",
     "category": { "key": "villas", "label": "الفلل" },
