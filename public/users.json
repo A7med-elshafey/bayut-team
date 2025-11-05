@@ -101,9 +101,9 @@
       "fullName": "Shoug"
     },
      {
-      "username": "talal",
-      "password": "9581",
-      "fullName": "Talal Alanzi"
+      "username": "amer.alotaibi",
+      "password": "Ak-47_511",
+      "fullName": "Amer Alotaibi"
     },
    
      {
@@ -132,9 +132,9 @@
       "fullName": "Sana"
     },
      {
-      "username": "wa",
+      "username": "khalid",
       "password": "123",
-      "fullName": "Waleed"
+      "fullName": "Khalid"
     },
      {
       "username": "abdulslam",
@@ -246,6 +246,13 @@
       "username": "mohammed",
       "password": "155990",
       "fullName": "Mohammed"
+    }
+   
+    ,
+     {
+      "username": "m.mahdy",
+      "password": "M7mdmahdy",
+      "fullName": "Mahdy"
     }
    
   ]
