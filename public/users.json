@@ -254,6 +254,24 @@
       "password": "M7mdmahdy",
       "fullName": "Mahdy"
     }
+    ,
+     {
+      "username": "abdulrhman",
+      "password": "A1d7m121",
+      "fullName": "abdulrhman"
+    }
+    ,
+     {
+      "username": "mohamed",
+      "password": "911911",
+      "fullName": "Mahamed"
+    }
+    ,
+     {
+      "username": "abdulmajeed",
+      "password": "911911",
+      "fullName": "Abdulmajeed"
+    }
    
   ]
 }
