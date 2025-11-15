@@ -1,0 +1,48 @@
+{
+  "id": "bayut-alhayi",
+    "name": "بيوت-الحي",
+  "category": {
+    "key": "apartments",
+    "label": "الشقق"
+  },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/bayut-alhai/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/bayut-alhai/pdfs/3-Fold-Bayut-Al-Hayi.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/bayut-alhai/pdfs/Fact-Sheet-Bayut-Al-Hayi.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/bayut-alhai/pdfs/Payment-Plan-Bayut-Al-Hayi.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/bayut-alhai/pdfs/Sales-Kit-Bayut-Al-Hayi.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/bayut-alhai/pdfs/Specifications-Bayut-Al-Hayi.pdf"
+
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/bayut-alhai/info/Detailed-Fact-Sheet-Bayut-Al-Hayi.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/bayut-alhai/info/FAQs-Document-Bayut-Al-Hayi.pdf"
+      ]
+    },
+    "location": {
+          "title": "الموقع",
+          "items": [
+            "https://maps.app.goo.gl/yUTq92dA9k88nTUj8"
+            
+          ]
+        },
+        "prices": {
+          "title": "الأسعار",
+          "items": [
+            "https://bayut.propforce.com/en/inventory?projectIds=3170"
+          ]
+        }
+  }
+}

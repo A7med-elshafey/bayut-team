@@ -1,0 +1,46 @@
+{
+    "id": "masharq-4-villas",
+    "name": "مشارق-4",
+  "category": {
+    "key": "villas",
+    "label": "الفلل"
+  },
+  "status": "under-construction",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/masharq-4/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/masharq-4/pdfs/3-Fold-Mashreq-4.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/masharq-4/pdfs/Fact-Sheet-Mashreq4.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/masharq-4/pdfs/Payment-Plan-Mashreq-4.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/masharq-4/pdfs/Sales-Kit-Mashreq-4.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/masharq-4/info/Detailed-Fact+Sheet-Mashreq-4.pdf"
+      ]
+    },
+    "location": {
+      "title": "الموقع",
+      "items": [
+        "https://maps.app.goo.gl/gnsmc4AeP1hSujT36"
+        
+      ]
+    },
+    "prices": {
+      "title": "الأسعار",
+      "items": [
+        "https://bayut.propforce.com/en/inventory?projectIds=3168"
+      ]
+    }
+  }
+
+}

@@ -101,6 +101,14 @@
     "handoverDate": "2028",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/osus-eye/cover/cover.png"
   },
+  {
+    "id": "bayut-alhayi",
+    "name": "بيوت-الحي",
+    "category": { "key": "apartments", "label": "الشقق" },
+    "status": "under-construction",
+    "handoverDate": "2026",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/apartments/bayut-alhai/cover/cover.png"
+  },
     {
     "id": "sella-3",
     "name": "صله-3",
@@ -149,6 +157,22 @@
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/rassen-villas/cover/cover.png"
   },
   {
+    "id": "ASDAM-villas",
+    "name": "اسدام",
+    "category": { "key": "villas", "label": "الفلل" },
+    "status": "under-construction",
+    "handoverDate": "2027",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/asdam-villas/cover/cover.png"
+  },
+  {
+    "id": "masharq-4-villas",
+    "name": "مشارق-4",
+    "category": { "key": "villas", "label": "الفلل" },
+    "status": "under-construction",
+    "handoverDate": "2028",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/masharq-4/cover/cover.png"
+  },
+  {
     "id": "saheel-villas",
     "name": "صهيل-الفرسان",
     "category": { "key": "villas", "label": "الفلل" },
@@ -162,6 +186,13 @@
     "category": { "key": "villas", "label": "الفلل" },
     "status": "ready",
     "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/al-jawhara-villas/cover/cover.png"
+  },
+  {
+    "id": "miskan-albadr-villas",
+    "name": "مسكان البدر",
+    "category": { "key": "villas", "label": "الفلل" },
+    "status": "ready",
+    "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/miskan-albadr/cover/cover.png"
   },
   {
     "id": "khozmaa-22",
