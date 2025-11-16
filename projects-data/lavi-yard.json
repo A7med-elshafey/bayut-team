@@ -1,0 +1,53 @@
+{
+  "id": "lavi-yard",
+    "name": "لافي يارد",
+  "category": {
+    "key": "towers",
+    "label": "الأبراج"
+  },
+  "status": "under-construction",
+  "cover": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/cover/cover.png",
+  "sections": {
+    "pdfs": {
+      "title": "ملفات PDF",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/pdfs/2231-ATA-IFC-2D-RE-T2-AR.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/pdfs/2231-ATA-IFC-2D-RE-T3-AR.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/pdfs/2231-ATA-IFC-2D-RE-T4-AR.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/pdfs/3+Fold+-+La+Vie+Yard+-+Arabic.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/pdfs/Fact+Sheet+-+La+Vie+Yard+-+Arabic.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/pdfs/La+Vie+Yard+-+Sales+Kit.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/pdfs/Payment+Plan+-+La+Vie+Yard.pdf",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/pdfs/Specifications+-+La+Vie+Yard+-+Arabic.pdf"
+      ]
+    },
+    "videos": {
+      "title": "الفيديوهات",
+      "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/videos/location-video.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/videos/markting-video.mp4"
+      ]
+    },
+    "info": {
+      "title": "معلومات إضافية",
+      "items": [
+        {
+          "url": "https://bayut-projects.s3.eu-north-1.amazonaws.com/towers/LaviYard/pdfs/Detailed+Fact+sheet+-+La+Vie+Yard+-+Arabic.pdf"
+        }
+      ]
+    },
+    "location": {
+          "title": "الموقع",
+          "items": [
+            "https://maps.app.goo.gl/4MgLqExxAidk2TNu9"
+            
+          ]
+        },
+        "prices": {
+          "title": "الأسعار",
+          "items": [
+            "https://bayut.propforce.com/en/inventory?projectIds=3369"
+          ]
+        }
+  }
+}

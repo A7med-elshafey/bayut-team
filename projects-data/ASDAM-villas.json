@@ -21,6 +21,10 @@
     "videos": {
       "title": "الفيديوهات",
       "items": [
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/asdam-villas/videos/andalosi.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/asdam-villas/videos/meditarin.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/asdam-villas/videos/modern.mp4",
+        "https://bayut-projects.s3.eu-north-1.amazonaws.com/villas/asdam-villas/videos/over-all-project.mp4"
       ]
     },
     "info": {
